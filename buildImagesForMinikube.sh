@@ -21,6 +21,11 @@ DEFAULT_SERVICES=(
   "proxy-client"
   "api-gateway"
   "user-service"
+  "shipping-service"
+  "product-service"
+  "payment-service"
+  "order-service"
+  "favourite-service"
 )
 
 # If arguments are provided, use them as services to build; otherwise use default

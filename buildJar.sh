@@ -24,6 +24,11 @@ DEFAULT_SERVICES=(
   "proxy-client"
   "service-discovery"
   "user-service"
+  "shipping-service"
+  "product-service"
+  "payment-service"
+  "order-service"
+  "favourite-service"
 )
 
 # Use provided args as service list or fallback to default
