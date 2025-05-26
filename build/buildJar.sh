@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ============================================
-# build-all.sh
+# buildAll.sh
 # ============================================
 # Description:
 #   Runs `./mvnw clean package` for each service
@@ -15,7 +15,7 @@
 
 # Resolve script and base directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+BASE_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 # Default list of services
 DEFAULT_SERVICES=(

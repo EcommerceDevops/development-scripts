@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ============================================
-# build-images.sh
+# buildImages.sh
 # ============================================
 # Description:
 #   Builds Docker images using version from pom.xml as --build-arg.
@@ -12,7 +12,7 @@
 
 # Resolve script directory and base services folder
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+BASE_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)" 
 
 # Default list of microservices
 DEFAULT_SERVICES=(
