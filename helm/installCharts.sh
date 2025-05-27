@@ -14,6 +14,11 @@
 #   ./installCharts.sh chart1 chart2  # installs only chart1 and chart2
 # ============================================
 
+# Adding linkerd mesh annotation to inject data plane proxies to each container.
+kubectl annotate namespace default linkerd.io/inject=enabled
+
+echo "Linkerd annotation applied for namespace default."
+
 # Set namespace and resolve manifest path
 NAMESPACE="default"
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../../k8s-manifests-/manifests" && pwd)"
